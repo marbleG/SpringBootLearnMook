@@ -3,6 +3,7 @@ package com.marble.repository;
 import com.marble.domain.User;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -35,5 +36,10 @@ public class UserRepository {
         return repository.put(id, user) == null;
     }
 
-    ;
+    /**
+     * 获取所有对象
+     */
+    public Collection<User> findAll() {
+        return repository.values();
+    }
 }
