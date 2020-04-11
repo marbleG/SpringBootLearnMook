@@ -11,6 +11,21 @@
 	<groupId>com.marble</groupId>
 	<artifactId>first-app-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+	<!--2.1 修改打包方式为pom-->
+	<packaging>pom</packaging>
+	<!--2.2 添加子模块
+		模型层：model
+		持久层：persistence
+		表示层：web
+		web 依赖与 persistence,persistence 依赖 model
+	-->
+	<modules>
+		<module>web</module>
+		<module>persistence</module>
+		<module>model</module>
+	</modules>
+
 	<name>first-app-demo</name>
 	<description>Demo project for Spring Boot mook</description>
 
