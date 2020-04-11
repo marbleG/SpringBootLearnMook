@@ -27,3 +27,5 @@ hs_err_pid*
 /target/
 **/*.iml
 /web/target/
+/persistence/target/
+/model/target/

@@ -19,4 +19,19 @@
         </dependency>
     </dependencies>
 
+    <!--也可将项目打成war包放入 容器中执行，或 java -jar **.war 注：该方式必须有web.xml文件-->
+    <!--<packaging>war</packaging>-->
+    <!--3.2 将该插件配置移动至主模块中，否则依赖模块报错-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--3.1 打包 指定 Main-class-->
+                <configuration>
+                    <mainClass>com.marble.FirstAppDemoApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

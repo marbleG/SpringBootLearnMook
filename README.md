@@ -12,4 +12,8 @@
         * 持久层
         * 表示层
     * 子模块依赖管理（\<dependencyManagement>）
+3. 项目打包
+    * 构建jar
+    * 构建war
+    * 指定Main-class
     
