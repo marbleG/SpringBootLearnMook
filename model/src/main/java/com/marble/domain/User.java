@@ -1,9 +1,9 @@
 package com.marble.domain;
 
 /**
+ * 创建用户模型
+ *
  * @author marble
- * @date 2020/4/11 12:36
- * @description 创建用户模型
  */
 public class User {
     private int id;

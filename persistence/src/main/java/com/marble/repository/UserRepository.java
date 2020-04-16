@@ -9,9 +9,9 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 创建用户持久层
+ *
  * @author marble
- * @date 2020/4/11 12:50
- * @description 创建用户持久层
  * {@link User} {@link Repository}
  */
 @Repository
